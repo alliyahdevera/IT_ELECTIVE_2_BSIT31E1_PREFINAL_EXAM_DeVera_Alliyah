@@ -1,0 +1,52 @@
+﻿@model List<Question>
+@{
+    ViewData["Title"] = ViewBag.TopicTitle;
+}
+
+<a asp-controller="Home" asp-action="Index" class="text-decoration-none">&larr; Back to topics</a>
+
+<div class="mb-4 mt-2">
+    <p class="text-uppercase text-secondary fw-bold" style="font-size: 12px; letter-spacing: 1px;">PreFinal Exam</p>
+    <h2 class="fw-bold">@ViewBag.TopicTitle</h2>
+</div>
+
+<div class="row g-4">
+    @foreach (Question q in Model)
+    {
+        <div class="col-md-4">
+            <div class="reviewer-card">
+                <div class="q-badge">@q.Id</div>
+                <p class="fw-bold mt-2">@q.Text</p>
+
+                <div class="choice-pill @(q.ChoiceA == q.Answer ? "correct" : "")">
+                    @if (q.ChoiceA == q.Answer)
+                    {
+                        <i class="bi bi-check-circle-fill"></i>
+                    }
+                    @q.ChoiceA
+                </div>
+                <div class="choice-pill @(q.ChoiceB == q.Answer ? "correct" : "")">
+                    @if (q.ChoiceB == q.Answer)
+                    {
+                        <i class="bi bi-check-circle-fill"></i>
+                    }
+                    @q.ChoiceB
+                </div>
+                <div class="choice-pill @(q.ChoiceC == q.Answer ? "correct" : "")">
+                    @if (q.ChoiceC == q.Answer)
+                    {
+                        <i class="bi bi-check-circle-fill"></i>
+                    }
+                    @q.ChoiceC
+                </div>
+                <div class="choice-pill @(q.ChoiceD == q.Answer ? "correct" : "")">
+                    @if (q.ChoiceD == q.Answer)
+                    {
+                        <i class="bi bi-check-circle-fill"></i>
+                    }
+                    @q.ChoiceD
+                </div>
+            </div>
+        </div>
+    }
+</div>

@@ -9,25 +9,25 @@ namespace PreFinalExamMVC.Controllers
         public IActionResult Topic1()
         {
             List<Question> questions = QuestionData.GetTopic1();
-            ViewBag.TopicTitle = "EF Core & Database Basics";
+            ViewBag.TopicTitle = "Relational Data Modeling; Model Binding and Controller Actions";
             return View("PrefinalExam", questions);
         }
         public IActionResult Topic2()
         {
             List<Question> questions = QuestionData.GetTopic2();
-            ViewBag.TopicTitle = "Relationships & Navigation Properties";
+            ViewBag.TopicTitle = "Conceptual Data Architecture: Designing ERDs; Razor Syntax and Dynamic Rendering";
             return View("PrefinalExam", questions);
         }
         public IActionResult Topic3()
         {
             List<Question> questions = QuestionData.GetTopic3();
-            ViewBag.TopicTitle = "ViewModels & Queries";
+            ViewBag.TopicTitle = "Data Normalization & Structural Integrity; Data Validation and ModelState";
             return View("PrefinalExam", questions);
         }
         public IActionResult Topic4()
         {
             List<Question> questions = QuestionData.GetTopic4();
-            ViewBag.TopicTitle = "Validation, Error Handling & Data Integrity";
+            ViewBag.TopicTitle = "Introduction to Structured Query Language; In-Memory Data Storage and CRUD Operations";
             return View("PrefinalExam", questions);
         }
     }
