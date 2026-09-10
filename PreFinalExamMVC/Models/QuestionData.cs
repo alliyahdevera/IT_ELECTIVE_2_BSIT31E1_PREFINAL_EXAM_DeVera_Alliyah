@@ -156,6 +156,17 @@ namespace PreFinalExamMVC.Models
                 Answer = "It loads the related Section navigation property"
             });
 
+            list.Add(new Question
+            {
+                Id = 13,
+                Text = "Which type of validation occurs in the browser before a request is sent to the server?",
+                ChoiceA = "Database-level validation",
+                ChoiceB = "Client-side validation",
+                ChoiceC = "Server-side validation",
+                ChoiceD = "EF Core migration validation",
+                Answer = "Client-side validation"
+            });
+
             return list;
         }
     }
