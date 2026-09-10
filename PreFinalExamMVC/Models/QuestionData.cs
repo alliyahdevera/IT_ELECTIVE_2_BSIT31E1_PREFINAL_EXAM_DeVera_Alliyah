@@ -167,6 +167,17 @@ namespace PreFinalExamMVC.Models
                 Answer = "Client-side validation"
             });
 
+            list.Add(new Question
+            {
+                Id = 14,
+                Text = "Why is server-side validation still necessary if client-side validation exists?",
+                ChoiceA = "Client-side validation can be bypassed",
+                ChoiceB = "Client-side validation automatically modifies the database",
+                ChoiceC = "Server-side validation only works with SQLite",
+                ChoiceD = "Client-side validation cannot display messages",
+                Answer = "Client-side validation can be bypassed"
+            });
+
             return list;
         }
     }
