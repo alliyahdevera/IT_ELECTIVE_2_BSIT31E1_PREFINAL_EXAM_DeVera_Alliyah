@@ -65,5 +65,23 @@ namespace PreFinalExamMVC.Models
 
             return list;
         }
+
+        public static List<Question> GetTopic2()
+        {
+            List<Question> list = new List<Question>();
+
+            list.Add(new Question
+            {
+                Id = 6,
+                Text = "Where is a database connection string commonly stored in an ASP.NET Core MVC application?",
+                ChoiceA = "Program.cs only",
+                ChoiceB = "appsettings.json",
+                ChoiceC = "Index.cshtml",
+                ChoiceD = "Student.cs",
+                Answer = "appsettings.json"
+            });
+
+            return list;
+        }
     }
 }

@@ -12,5 +12,11 @@ namespace PreFinalExamMVC.Controllers
             ViewBag.TopicTitle = "EF Core & Database Basics";
             return View("PrefinalExam", questions);
         }
+        public IActionResult Topic2()
+        {
+            List<Question> questions = QuestionData.GetTopic2();
+            ViewBag.TopicTitle = "Relationships & Navigation Properties";
+            return View("PrefinalExam", questions);
+        }
     }
 }
