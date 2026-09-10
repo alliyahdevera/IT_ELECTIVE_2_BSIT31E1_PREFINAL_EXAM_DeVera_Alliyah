@@ -41,6 +41,17 @@ namespace PreFinalExamMVC.Models
                 Answer = "To map objects in code to relational database data"
             });
 
+            list.Add(new Question
+            {
+                Id = 4,
+                Text = "Which EF Core component is primarily responsible for communicating with the database?",
+                ChoiceA = "DbContext",
+                ChoiceB = "DbSetView",
+                ChoiceC = "ControllerContext",
+                ChoiceD = "RazorContext",
+                Answer = "DbContext"
+            });
+
             return list;
         }
     }
