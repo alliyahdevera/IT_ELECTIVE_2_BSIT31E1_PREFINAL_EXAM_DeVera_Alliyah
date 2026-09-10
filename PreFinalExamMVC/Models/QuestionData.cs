@@ -52,6 +52,17 @@ namespace PreFinalExamMVC.Models
                 Answer = "DbContext"
             });
 
+            list.Add(new Question
+            {
+                Id = 5,
+                Text = "What does 'dotnet ef dbcontext scaffold' primarily do?",
+                ChoiceA = "Deletes the database",
+                ChoiceB = "Creates a new MVC project",
+                ChoiceC = "Generates EF Core models and a DbContext from an existing database",
+                ChoiceD = "Starts the MVC application",
+                Answer = "Generates EF Core models and a DbContext from an existing database"
+            });
+
             return list;
         }
     }
