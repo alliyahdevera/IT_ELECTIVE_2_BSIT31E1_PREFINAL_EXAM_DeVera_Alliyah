@@ -30,6 +30,17 @@ namespace PreFinalExamMVC.Models
                 Answer = "Database-First"
             });
 
+            list.Add(new Question
+            {
+                Id = 3,
+                Text = "What is the primary purpose of Entity Framework Core?",
+                ChoiceA = "To create HTML pages automatically",
+                ChoiceB = "To replace the MVC Controller",
+                ChoiceC = "To map objects in code to relational database data",
+                ChoiceD = "To replace the C# compiler",
+                Answer = "To map objects in code to relational database data"
+            });
+
             return list;
         }
     }
