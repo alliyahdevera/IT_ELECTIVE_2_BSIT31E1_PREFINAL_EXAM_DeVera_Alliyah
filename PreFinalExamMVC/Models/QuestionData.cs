@@ -240,6 +240,17 @@ namespace PreFinalExamMVC.Models
                 Answer = "Display a Not Found (404) response/page"
             });
 
+            list.Add(new Question
+            {
+                Id = 20,
+                Text = "A student already belongs to Section A for a particular subject. The application attempts to assign the same student to Section A again. What is the primary concern?",
+                ChoiceA = "Data integrity",
+                ChoiceB = "HTML formatting",
+                ChoiceC = "CSS inheritance",
+                ChoiceD = "Razor syntax",
+                Answer = "Data integrity"
+            });
+
             return list;
         }
     }
