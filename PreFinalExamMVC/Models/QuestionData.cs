@@ -199,12 +199,23 @@ namespace PreFinalExamMVC.Models
             list.Add(new Question
             {
                 Id = 16,
-                Text = "Which is the best reason for a database-level unique constraint on StudentNumber?",
+                Text = "Which is the best reason for having a database-level unique constraint on StudentNumber?",
                 ChoiceA = "It protects data integrity even if application-level validation is bypassed",
                 ChoiceB = "It makes Razor Views render faster",
                 ChoiceC = "It removes the need for a Controller",
                 ChoiceD = "It automatically creates a ViewModel",
                 Answer = "It protects data integrity even if application-level validation is bypassed"
+            });
+
+            list.Add(new Question
+            {
+                Id = 17,
+                Text = "What is the purpose of a try...catch block in a controller?",
+                ChoiceA = "To create navigation properties",
+                ChoiceB = "To catch and handle exceptions that may occur during execution",
+                ChoiceC = "To generate database tables",
+                ChoiceD = "To perform client-side validation",
+                Answer = "To catch and handle exceptions that may occur during execution"
             });
 
             return list;
