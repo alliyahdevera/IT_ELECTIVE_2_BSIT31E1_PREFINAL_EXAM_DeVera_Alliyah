@@ -92,6 +92,19 @@ namespace PreFinalExamMVC.Models
                 Answer = "One-to-Many"
             });
 
+            list.Add(new Question
+            {
+                Id = 8,
+                Text = "In the following example, what is SectionId?\n\n" +
+                       "public int SectionId { get; set; }\n" +
+                       "public Section Section { get; set; }",
+                ChoiceA = "Primary key of Student",
+                ChoiceB = "Foreign key referencing Section",
+                ChoiceC = "Navigation property",
+                ChoiceD = "Database connection string",
+                Answer = "Foreign key referencing Section"
+            });
+
             return list;
         }
     }
