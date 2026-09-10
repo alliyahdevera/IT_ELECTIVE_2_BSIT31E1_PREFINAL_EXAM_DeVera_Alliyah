@@ -129,5 +129,23 @@ namespace PreFinalExamMVC.Models
 
             return list;
         }
+
+        public static List<Question> GetTopic3()
+        {
+            List<Question> list = new List<Question>();
+
+            list.Add(new Question
+            {
+                Id = 11,
+                Text = "Why might a ViewModel be used when displaying Student and Section information?",
+                ChoiceA = "To replace the database",
+                ChoiceB = "To combine or shape the data specifically needed by the view",
+                ChoiceC = "To automatically create database tables",
+                ChoiceD = "To prevent controllers from using LINQ",
+                Answer = "To combine or shape the data specifically needed by the view"
+            });
+
+            return list;
+        }
     }
 }

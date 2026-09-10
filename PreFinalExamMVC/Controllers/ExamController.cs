@@ -18,5 +18,11 @@ namespace PreFinalExamMVC.Controllers
             ViewBag.TopicTitle = "Relationships & Navigation Properties";
             return View("PrefinalExam", questions);
         }
+        public IActionResult Topic3()
+        {
+            List<Question> questions = QuestionData.GetTopic3();
+            ViewBag.TopicTitle = "ViewModels & Queries";
+            return View("PrefinalExam", questions);
+        }
     }
 }
