@@ -218,6 +218,17 @@ namespace PreFinalExamMVC.Models
                 Answer = "To catch and handle exceptions that may occur during execution"
             });
 
+            list.Add(new Question
+            {
+                Id = 18,
+                Text = "Which middleware is commonly used in ASP.NET Core for centralized exception handling?",
+                ChoiceA = "UseDatabase()",
+                ChoiceB = "UseExceptionHandler()",
+                ChoiceC = "UseValidationHandler()",
+                ChoiceD = "UseMvcDatabase()",
+                Answer = "UseExceptionHandler()"
+            });
+
             return list;
         }
     }
