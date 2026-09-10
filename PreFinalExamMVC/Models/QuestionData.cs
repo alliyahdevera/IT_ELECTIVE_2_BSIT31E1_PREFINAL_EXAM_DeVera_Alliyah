@@ -81,6 +81,17 @@ namespace PreFinalExamMVC.Models
                 Answer = "appsettings.json"
             });
 
+            list.Add(new Question
+            {
+                Id = 7,
+                Text = "A Student belongs to exactly one Section, while a Section can contain many students. What type of relationship is this?",
+                ChoiceA = "One-to-One",
+                ChoiceB = "One-to-Many",
+                ChoiceC = "Many-to-Many",
+                ChoiceD = "Many-to-One only",
+                Answer = "One-to-Many"
+            });
+
             return list;
         }
     }
