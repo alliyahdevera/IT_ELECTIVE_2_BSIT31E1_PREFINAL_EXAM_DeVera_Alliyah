@@ -145,6 +145,17 @@ namespace PreFinalExamMVC.Models
                 Answer = "To combine or shape the data specifically needed by the view"
             });
 
+            list.Add(new Question
+            {
+                Id = 12,
+                Text = "What is the main benefit of using Include(s => s.Section) in a query?",
+                ChoiceA = "It loads the related Section navigation property",
+                ChoiceB = "It creates a Section object manually",
+                ChoiceC = "It removes the foreign key",
+                ChoiceD = "It prevents the query from accessing the database",
+                Answer = "It loads the related Section navigation property"
+            });
+
             return list;
         }
     }
