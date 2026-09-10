@@ -229,6 +229,17 @@ namespace PreFinalExamMVC.Models
                 Answer = "UseExceptionHandler()"
             });
 
+            list.Add(new Question
+            {
+                Id = 19,
+                Text = "A user requests /Student/999, but Student 999 does not exist. What would be the most appropriate response?",
+                ChoiceA = "Display the student's information anyway",
+                ChoiceB = "Display a Not Found (404) response/page",
+                ChoiceC = "Delete Student 999",
+                ChoiceD = "Create Student 999 automatically",
+                Answer = "Display a Not Found (404) response/page"
+            });
+
             return list;
         }
     }
