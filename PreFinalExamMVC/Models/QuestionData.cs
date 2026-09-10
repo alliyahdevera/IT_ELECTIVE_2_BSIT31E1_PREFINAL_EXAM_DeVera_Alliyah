@@ -105,6 +105,17 @@ namespace PreFinalExamMVC.Models
                 Answer = "Foreign key referencing Section"
             });
 
+            list.Add(new Question
+            {
+                Id = 9,
+                Text = "What is the purpose of a navigation property such as 'public Section Section { get; set; }'?",
+                ChoiceA = "It stores the database password",
+                ChoiceB = "It represents a relationship to another entity",
+                ChoiceC = "It creates a new database",
+                ChoiceD = "It validates the student's name",
+                Answer = "It represents a relationship to another entity"
+            });
+
             return list;
         }
     }
