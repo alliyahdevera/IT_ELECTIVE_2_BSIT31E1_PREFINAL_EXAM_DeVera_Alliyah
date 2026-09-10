@@ -191,5 +191,23 @@ namespace PreFinalExamMVC.Models
 
             return list;
         }
+
+        public static List<Question> GetTopic4()
+        {
+            List<Question> list = new List<Question>();
+
+            list.Add(new Question
+            {
+                Id = 16,
+                Text = "Which is the best reason for a database-level unique constraint on StudentNumber?",
+                ChoiceA = "It protects data integrity even if application-level validation is bypassed",
+                ChoiceB = "It makes Razor Views render faster",
+                ChoiceC = "It removes the need for a Controller",
+                ChoiceD = "It automatically creates a ViewModel",
+                Answer = "It protects data integrity even if application-level validation is bypassed"
+            });
+
+            return list;
+        }
     }
 }

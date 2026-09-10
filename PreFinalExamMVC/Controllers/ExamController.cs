@@ -24,5 +24,11 @@ namespace PreFinalExamMVC.Controllers
             ViewBag.TopicTitle = "ViewModels & Queries";
             return View("PrefinalExam", questions);
         }
+        public IActionResult Topic4()
+        {
+            List<Question> questions = QuestionData.GetTopic4();
+            ViewBag.TopicTitle = "Validation, Error Handling & Data Integrity";
+            return View("PrefinalExam", questions);
+        }
     }
 }
