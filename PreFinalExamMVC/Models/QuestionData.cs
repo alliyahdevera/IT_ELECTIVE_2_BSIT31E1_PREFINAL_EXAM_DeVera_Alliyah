@@ -19,6 +19,17 @@ namespace PreFinalExamMVC.Models
                 Answer = "It allows data to persist after the application stops"
             });
 
+            list.Add(new Question
+            {
+                Id = 2,
+                Text = "Which approach is being used when an existing database is used to generate EF Core entity classes?",
+                ChoiceA = "Code-First",
+                ChoiceB = "Database-First",
+                ChoiceC = "Model-First",
+                ChoiceD = "Controller-First",
+                Answer = "Database-First"
+            });
+
             return list;
         }
     }
