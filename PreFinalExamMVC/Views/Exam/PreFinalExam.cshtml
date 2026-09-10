@@ -3,10 +3,8 @@
     ViewData["Title"] = ViewBag.TopicTitle;
 }
 
-<a asp-controller="Home" asp-action="Index" class="text-decoration-none">&larr; Back to topics</a>
-
 <div class="mb-4 mt-2">
-    <p class="text-uppercase text-secondary fw-bold" style="font-size: 12px; letter-spacing: 1px;">PreFinal Exam</p>
+    <p class="text-uppercase text-secondary fw-bold" style="font-size: 12px; letter-spacing: 1px;">PreFinal Exam Answers</p>
     <h2 class="fw-bold">@ViewBag.TopicTitle</h2>
 </div>
 
@@ -33,4 +31,8 @@
             </div>
         </div>
     }
+
+    <div class="col-md-4 d-flex align-items-end justify-content-end">
+        <a asp-controller="Home" asp-action="Index" class="btn-topic">&larr; Back to Main</a>
+    </div>
 </div>

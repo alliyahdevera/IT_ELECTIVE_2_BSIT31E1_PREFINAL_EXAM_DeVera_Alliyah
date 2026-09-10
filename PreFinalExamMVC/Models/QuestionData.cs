@@ -55,7 +55,7 @@ namespace PreFinalExamMVC.Models
             list.Add(new Question
             {
                 Id = 5,
-                Text = "What does 'dotnet ef dbcontext scaffold' primarily do?",
+                Text = "What does 'dotnet ef dbcontext scaffold' primarily do? 'dotnet ef dbcontext scaffold \"ConnectionString\" Microsoft.Entity FrameworkCore.SqlServer -o Models'",
                 ChoiceA = "Deletes the database",
                 ChoiceB = "Creates a new MVC project",
                 ChoiceC = "Generates EF Core models and a DbContext from an existing database",

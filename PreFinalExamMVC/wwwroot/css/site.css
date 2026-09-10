@@ -18,7 +18,12 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background: linear-gradient(to bottom, #fbe4f0 0%, #f0ebfa 100%);
+}
+
+.navbar {
+    background-color: transparent;
 }
 
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
@@ -95,7 +100,7 @@ body {
 .reviewer-card {
     background-color: white;
     border-radius: 16px;
-    padding: 20px;
+    padding: 14px;
     height: 100%;
     box-shadow: 0 1px 4px rgba(0,0,0,0.06);
 }
@@ -116,9 +121,9 @@ body {
     background-color: #f1f3f5;
     color: #495057;
     border-radius: 10px;
-    padding: 8px 16px;
-    margin-top: 8px;
-    font-size: 14px;
+    padding: 6px 14px;
+    margin-top: 6px;
+    font-size: 13px;
     text-align: center;
 }
 
@@ -130,4 +135,21 @@ body {
 
     .choice-pill i {
         margin-right: 6px;
+    }
+.btn-topic {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-top: 12px;
+    background-color: #6c757d;
+    
+}
+
+    .btn-topic:hover {
+        background-color: #4b2e83;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        box-shadow: 0 0 14px rgba(0, 0, 0, 0.30);
     }
