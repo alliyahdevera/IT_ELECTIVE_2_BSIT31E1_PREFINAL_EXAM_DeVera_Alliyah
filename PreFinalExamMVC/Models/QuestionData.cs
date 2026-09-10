@@ -116,6 +116,17 @@ namespace PreFinalExamMVC.Models
                 Answer = "It represents a relationship to another entity"
             });
 
+            list.Add(new Question
+            {
+                Id = 10,
+                Text = "What does .Include() generally allow EF Core to do?",
+                ChoiceA = "Delete the Section table",
+                ChoiceB = "Load related Section data together with Students",
+                ChoiceC = "Create a new Student",
+                ChoiceD = "Validate Student input",
+                Answer = "Load related Section data together with Students"
+            });
+
             return list;
         }
     }
